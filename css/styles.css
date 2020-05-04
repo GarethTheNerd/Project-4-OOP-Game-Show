@@ -8,7 +8,7 @@
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
-  --color-neutral-light: #D2D2D2;
+  --color-neutral-light: #E5E5E5;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
   --font-size-large: 60px;
@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-color: black;
 }
 
 li, ol, ul {
@@ -60,6 +61,10 @@ button {
   cursor: pointer;
 }
 
+button:disabled {
+  cursor: not-allowed;
+}
+
 #btn__reset {
 	width: 200px;
 	margin: 0 auto;
@@ -86,7 +91,7 @@ button {
 /* Title */
 
 .header {
-  color: #3a3f58;
+  color: white;
 }
 
 
@@ -111,7 +116,7 @@ button {
 
 .show {
   color: #fff;
-  background-color: #4ac0d5;
+  background-color: #2bff00;
   font-size: 20px;
   height: 65px;
   width: 65px;
@@ -131,14 +136,14 @@ button {
 }
 
 .chosen {
-  background: #3a3f58;
+  background: #2bff00;
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
 }
 
 .wrong {
-  background: #f7a964;
+  background: #ff0000;
   color: #FFFFFF;
 }
 
